@@ -3,7 +3,7 @@
 
 def prima(list):
 
-	prima = []
+	prim = []
 
 	for i in range(min(list),max(list)):
 		count = 2
@@ -16,7 +16,7 @@ def prima(list):
 					break
 			count += 1
 
-	print(prima)
+	print(prim)
 
 
 if __name__ == "__main__":
