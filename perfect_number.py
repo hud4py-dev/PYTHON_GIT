@@ -1,23 +1,19 @@
-# perfect number checking
-
-import math
+# checking perfect number
 
 def dvsr(intgr):
   div = []
   count = 1
-  while (count<intgr):
-    if (intgr%count) == 0:
-      div.append(intgr)
+  while (count<=intgr):
+    if intgr%count == 0:
+      count += count
+      if count == intgr:
+          break
     count += 1
-  cek(div)
-
-def check(list):
-  s = sum(list)
-  if intgr == s:
-    print(x,"is a perfect number")
-  else:
-    print(x,"is not a perfect number")
+  return count
 
 if __name__ == "__main__":
-x = int(input("number : "))
-dvsr(x)
+    x = int(input("number : "))
+    if x == dvsr(x) :
+        print(x,"is perfect")
+    else :
+        print(x,"is not perfect")
