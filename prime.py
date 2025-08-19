@@ -12,7 +12,7 @@ def prima(list):
 				break
 			else:
 				if count == i-1:
-					prima.append(i)
+					prim.append(i)
 					break
 			count += 1
 
