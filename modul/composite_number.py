@@ -2,8 +2,7 @@
 
 from prime_number import intvl
 
-def cmpst(a,b):
-	com = []
+def check(n):
 	for j in range(a,1+b):
 		if j not in intvl(a,b):
 			com.append(j)
