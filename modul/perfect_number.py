@@ -20,28 +20,3 @@ def intvl(a,b):
         if True:
             perf.append(j)
     return perf
-
-if __name__ == "__main__":
-    print("--PERFECT NUMBER--")
-    print("------------------")
-    menu = ["Perfect number check","Perfect number interval"]
-    for i in range(2):
-        print(f"{i+1}- {menu[i]}")
-    try:
-        m = int(input("which one will you choose? "))
-        if m == 1:
-            try:
-                x = int(input("number: "))    
-                print(f"result: {check(x)}. The number is perfect")
-            except:
-                print("Error..")
-        elif m == 2:
-            try:
-                minimum = int(input("min: "))
-                maximum = int(input("max: "))
-                print(f"result: {intvl(minimum,maximum)}")
-                print(f"Total: {len(intvl(minimum,maximum))} numbers")
-            except:
-                print("Error..")
-    except:
-        print("Error..")
